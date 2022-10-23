@@ -10,16 +10,17 @@ import {
 } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
+import Doanhthu from "./pages/doanhthu/Doanhthu";
 import NewUser from "./pages/newUser/NewUser";
 import Login from "./pages/login/Login";
 import { AuthContext } from "./context/authContext/AuthContext";
 import { useContext } from "react";
-// import ListList from "./pages/listList/ListList";
-// import List from "./pages/list/List";
-// import NewList from "./pages/newList/NewList";
-// import MovieList from "./pages/movieList/MovieList";
+import ListList from "./pages/listList/ListList";
+import List from "./pages/list/List";
+import NewList from "./pages/newList/NewList";
+import MovieList from "./pages/movieList/MovieList";
 import { Movie } from "@material-ui/icons";
-// import NewMovie from "./pages/newMovie/NewMovie";
+import NewMovie from "./pages/newMovie/NewMovie";
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -35,13 +36,16 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
+              <Route exact path="/doanhthu">
+                <Doanhthu />
+              </Route>
               <Route path="/users">
                 <UserList />
               </Route>
               <Route path="/user/:userId">
                 <User />
               </Route>
-              {/* <Route path="/newUser">
+              <Route path="/newUser">
                 <NewUser />
               </Route>
               <Route path="/movies">
@@ -61,7 +65,7 @@ function App() {
               </Route>
               <Route path="/newlist">
                 <NewList />
-              </Route> */}
+              </Route>
             </div>
           </>
         )}

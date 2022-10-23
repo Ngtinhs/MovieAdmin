@@ -7,21 +7,14 @@ export default function Topbar() {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">lamaadmin</span>
+          <span className="logo">ADMIN</span>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
             <NotificationsNone />
             <span className="topIconBadge">2</span>
           </div>
-          <div className="topbarIconContainer">
-            <Language />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Settings />
-          </div>
-          <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" />
+          <img src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/244316460_1680700922321164_2539198379435572250_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Fs_dAdMkYAIAX9DRJ-p&_nc_ht=scontent.fsgn5-14.fna&oh=00_AT9Ii7DlC7hEhI-gcDJrERc7LOwvQ-7v2CWK1oHD3nU3gA&oe=6357BB04" alt="" className="topAvatar" />
         </div>
       </div>
     </div>
